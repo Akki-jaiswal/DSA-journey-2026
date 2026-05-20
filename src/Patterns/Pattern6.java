@@ -1,6 +1,6 @@
 package Patterns;
 
-public class Pattern5 {
+public class Pattern6 {
     static void main() {
         int n = 5;
         for(int i = 1; i <= n; i++){
