@@ -36,7 +36,7 @@ public class Merge {
         // Merge both halves
         merge(arr, low, mid, high);
     }
-    public static void main(String[] args) {
+    static void main(String[] args) {
         int[] arr = {5, 2, 8, 4, 1};
         Merge sol = new Merge();
         sol.mergeSort(arr, 0, arr.length - 1);
