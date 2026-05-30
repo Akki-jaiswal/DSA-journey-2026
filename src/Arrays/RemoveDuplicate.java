@@ -17,7 +17,7 @@ public class RemoveDuplicate {
         System.out.println("Unique count = " + unique_count);
         System.out.println("Array after removing duplicates: ");
         for(int num=0; num<unique_count; num++){
-            System.out.println(num);
+            System.out.println(num+" ");
         }
     }
 }
