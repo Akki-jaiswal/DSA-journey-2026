@@ -20,23 +20,24 @@ import java.util.*;
                     maxLen = i + 1;
                 }
                 // if this sum seen before, subarray (prevIndex..i] has zero sum
-                else if (sumIndexMap.containsKey(sum)) {
-                    // maximize length using previous index
-                    maxLen = Math.max(maxLen, i - sumIndexMap.get(sum));
-                }
-                // first time seeing this sum, store its index
                 else {
-                    sumIndexMap.put(sum, i);
+                    if (sumIndexMap.containsKey(sum)) {
+                        // maximize length using previous index
+                        maxLen = Math.max(maxLen, i - sumIndexMap.get(sum));
+                    }
+                    // first time seeing this sum, store its index
+                    else {
+                        sumIndexMap.put(sum, i);
+                    }
                 }
             }
-
             // return best length
             return maxLen;
         }
     // program entry
     public static void main(String[] args) {
         // sample input
-        int[] a = new int[] {9, -3, 3, -1, 6, -5};
+        int[] a = {9, -3, 3, -1, 6, -5};
         // compute result
         int ans = new LongestSubarray0sum().solve(a);
         // print result
