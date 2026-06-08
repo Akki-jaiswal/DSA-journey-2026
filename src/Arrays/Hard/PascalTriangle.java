@@ -1,4 +1,4 @@
-package Arrays.Medium;
+package Arrays.Hard;
 
 public class PascalTriangle {
     static void main(String[] args) {
@@ -7,8 +7,8 @@ public class PascalTriangle {
         int k = c-1;
         long result = 1;
         for(int i=0; i<k; i++){
-            result*=(n-1);
-            result/=(i+1);
+                result*=(n-1);
+                result/=(i+1);
         }
         System.out.println(result);
     }
