@@ -104,9 +104,13 @@ public class Intro {
 
         System.out.println("--- Testing Insertions ---");
         head = insertAtHead(head, 20);      // 20 -> null
+        printList(head);
         head = insertAtHead(head, 10);      // 10 -> 20 -> null
+        printList(head);
         head = insertAtLast(head, 40);      // 10 -> 20 -> 40 -> null
+        printList(head);
         head = insertAtPosition(head, 30, 3); // 10 -> 20 -> 30 -> 40 -> null
+        printList(head);
         head = insertBeforeValue(head, 25, 30); // 10 -> 20 -> 25 -> 30 -> 40 -> null
 
         printList(head);
