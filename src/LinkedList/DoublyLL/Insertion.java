@@ -1,17 +1,18 @@
 package LinkedList.DoublyLL;
 
-class Node{
-    int data;
-    Node next;
-    Node back;
 
-    Node(int data){
-        this.data = data;
-        this.next = null;
-        this.back = null;
-    }
-}
 public class Insertion {
+    static class Node{
+        int data;
+        Node next;
+        Node back;
+
+        Node(int data){
+            this.data = data;
+            this.next = null;
+            this.back = null;
+        }
+    }
     public static Node insertAtHead(Node head,int val){
         Node newNode = new Node(val);
         if (head == null){
