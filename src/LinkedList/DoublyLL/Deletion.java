@@ -1,6 +1,17 @@
 package LinkedList.DoublyLL;
 
 public class Deletion {
+    static class Node{
+        int data;
+        Node next;
+        Node back;
+
+        Node(int data){
+            this.data = data;
+            this.next = null;
+            this.back = null;
+        }
+    }
     public static Node deleteHead(Node head){
         if (head==null || head.next==null) return null;
         Node prev = head;
