@@ -18,7 +18,7 @@ public class NGE_II {
                     ans[ind] = -1;
                 }
                 else {
-                    ans[ind] =st.pop();
+                    ans[ind] =st.peek();
                 }
             }
             st.push(currEle);
