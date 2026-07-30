@@ -1,0 +1,45 @@
+package StackQueues.Monotonic;
+
+import java.util.Stack;
+
+public class removeKDigits {
+    public String removeKdigits(String nums, int k){
+        Stack<Character> st = new Stack<>();
+        for (int i=0; i<nums.length(); i++){
+            char digit = nums.charAt(i);
+            while (!st.isEmpty() && k>0 && st.peek() > digit){
+                st.pop();
+                k--;
+            }
+            st.push(digit);
+        }
+        while (k>0){
+            st.pop();
+            k--;
+        }
+        if (st.isEmpty()) return "0";
+        StringBuilder res = new StringBuilder();
+        while (!st.isEmpty()){
+            res.append(st.pop());
+        }
+        while (res.length()>0 && res.charAt(res.length()-1)=='0'){
+            res.deleteCharAt(res.length()-1);
+        }
+        res.reverse();
+        if (res.length()==0) return "0";
+        return res.toString();
+    }
+    static void main(String[] args) {
+        String nums = "541892"; // Input number as string
+        int k = 3; // Number of digits to remove
+
+        // Create an instance of Solution class
+        removeKDigits sol = new removeKDigits();
+
+        // Call the function to find the smallest number after removing k digits
+        String ans = sol.removeKdigits(nums, k);
+
+        // Print the result
+        System.out.println("The smallest possible integer after removing k digits is: " + ans);
+    }
+}
