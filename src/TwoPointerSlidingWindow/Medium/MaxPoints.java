@@ -10,6 +10,7 @@ public class MaxPoints {
         int maxPoints = total;
         for (int i=0; i<k; i++){
             total-=cardPoints[k-i-1];
+            total += cardPoints[n - 1 - i];
             maxPoints=Math.max(maxPoints, total);
         }
         return maxPoints;
