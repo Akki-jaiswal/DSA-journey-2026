@@ -30,3 +30,4 @@ public class SubstringWithMostKCharacters {
         System.out.println(sol.lengthOfLongestSubstringKDistinct(s, k));
     }
 }
+
