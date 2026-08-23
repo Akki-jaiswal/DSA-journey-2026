@@ -1,6 +1,6 @@
 package BinaryTree.Easy;
 import java.util.*;
-public class PostOrder {
+public class PostOrder2Stack {
     public static List<Integer> postOrder(Node root){
         List<Integer> postorder = new ArrayList<>();
         if (root == null){
@@ -31,7 +31,7 @@ public class PostOrder {
         root.left.left = new Node(4);
         root.left.right = new Node(5);
 
-        List<Integer> result = PostOrder.postOrder(root);
+        List<Integer> result = PostOrder2Stack.postOrder(root);
 
         System.out.print("Postorder traversal: ");
         for (int val : result) {
