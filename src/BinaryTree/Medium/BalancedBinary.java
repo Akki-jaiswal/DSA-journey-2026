@@ -9,7 +9,7 @@ public class BalancedBinary {
         int leftHeight = dfsHeight(root.left);
         if (leftHeight==-1)
             return -1;
-        int rightHeight = dfsHeight(root.right);
+        int rightHeight = dfsheight(root.right);
         if (rightHeight==-1)
             return -1;
 
