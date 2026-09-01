@@ -3,7 +3,7 @@ package BinaryTree.Easy;
 import java.util.*;
 
 // Removed 'public' so Java doesn't expect a separate Pair.java file
-class Pair {
+public class Pair {
     Node node;
     int num;
 
