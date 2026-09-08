@@ -20,6 +20,7 @@ public class LCommonAncestor {
         if (left==null) return right;
         if (right==null) return left;
         return root;
+
     }
     static void main(String[] args) {
         // Construct a sample binary tree
