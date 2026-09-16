@@ -31,7 +31,7 @@ public class MergeTwoBST {
         return merged;
     }
 
-    // Function to merge two BSTs
+    //Function to merge two BSTs
     List<Integer> mergeBSTs(TreeNode root1, TreeNode root2) {
         // Lists to store inorder traversals
         List<Integer> arr1 = new ArrayList<>();
