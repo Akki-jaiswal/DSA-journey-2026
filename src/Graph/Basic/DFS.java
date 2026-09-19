@@ -29,7 +29,6 @@ public class DFS {
         // Visited array
         boolean[] visited = new boolean[V];
 
-        // Result list
         List<Integer> result = new ArrayList<>();
 
         // Create object
@@ -40,7 +39,7 @@ public class DFS {
 
         // Print traversal
         for (int x : result) {
-            System.out.print(x + " ");
+            System.out.print(x + "  ");
         }
         System.out.println();
     }
